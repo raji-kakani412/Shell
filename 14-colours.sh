@@ -4,7 +4,7 @@ USERID=$(id-u)
 #echo "User ID is $USERID"
 R="\e[31m"
 G="\e[32m"
-Y="\e[33m"
+#Y="\e[33m"
 N="\e[0m"
 
 #Functions
@@ -26,7 +26,7 @@ VALIDATE(){
     fi
 }
 
-CHECK_ROOT
+CHECK_ROOT #to check user has executable access or not  
 
 dnf list installed git
 #VALIDATE $? "Listing Git" where $1 is $? and $2 is Listing Git
