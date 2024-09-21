@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#declaring variables variablename=value no gap between them
+#declaring variables variablename=value no space should be there them
 PERSON1=Ramesh
 PERSON2=Suresh
 
