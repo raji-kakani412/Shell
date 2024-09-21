@@ -26,7 +26,7 @@ VALIDATE(){
     fi
 }
 
-CHECK_ROOT #to check user has executable access or not  
+CHECK_ROOT   
 
 dnf list installed git
 #VALIDATE $? "Listing Git" where $1 is $? and $2 is Listing Git
