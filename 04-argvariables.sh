@@ -6,5 +6,5 @@ PERSON2=$2
 
 echo "$PERSON1: Hi ${PERSON2}, How are you doing?"
 echo "${PERSON2}:I am good. How are you?"
-echo "$PERSON1 I am doing good. What's going on?"
+echo "$PERSON1: I am doing good. What's going on?"
 echo "${PERSON2}: I am practicing Shell scripting"
