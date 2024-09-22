@@ -48,11 +48,11 @@ fi
 # sudo sh 16-install-loop.sh git mysql postfix nginx
 for package in $@ # $@ refers to all args passed to it
 do
-    dnf list installed $package  &>>$LOG_FILE
+    dnf list installed $package  &>> $LOG_FILE
     if [ $? -ne 0 ]
     then
         echo "$package is not installed. Going to install it.." | tee -a $LOG_FILE
-        dnf install $package -y  &>>$LOG_FILE
+        dnf install $package -y  &>> $LOG_FILE
         VALIDATE $? "Installing $package"
     else
         echo -e "$package is already $Y installed. Nothing to do.. $N" | tee -a $LOG_FILE
