@@ -37,7 +37,7 @@ USAGE(){
     exit 1
 }
 
-echo "script started executing at: $(date)" | tee -a $LOG_FILE
+echo "script started executing at: $(date) and redirects to $LOG_FILE" | tee -a $LOG_FILE
 
 CHECK_ROOT 
 
