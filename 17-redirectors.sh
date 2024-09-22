@@ -2,8 +2,8 @@
 
 LOGS_FOLDER="/var/logs/shell-script"
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1) # where $0 gives us script name 17-redirectors.sh
-TIME_STAMP=$(date +%Y-%m-%d-%H-%M-%S)
-LOG_FILE= "$LOGS_FOLDER/$SCRIPT_NAME-$TIME_STAMP.log"
+TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
+LOG_FILE= "$LOGS_FOLDER/$SCRIPT_NAME-$TIMESTAMP.log"
 mkdir -p $LOGS_FOLDER #Creates a folder shell-script
 
 USERID=$(id -u)
