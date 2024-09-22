@@ -7,4 +7,4 @@ echo "Current working directory $PWD"
 echo "Home directory of current user: $HOME"
 echo "Process instance ID of current executing script $$"
 sleep 100 &
-echo "PID of last backgroung command : $!"
+echo "PID of last background command : $!"
