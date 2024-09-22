@@ -5,7 +5,7 @@ SCRIPT_NAME=$(echo $0 | cut -d "." -f1) # where $0 gives us script name 17-redir
 TIME_STAMP=$(date +%Y-%m-%d-%H-%M-%S)
 LOG_FILE= "$LOGS_FOLDER/$SCRIPT_NAME-$TIME_STAMP.log"
 mkdir -p $LOGS_FOLDER #Creates a folder shell-script
-USERID=$(id-u)
+USERID=$(id -u)
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
