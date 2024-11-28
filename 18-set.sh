@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-set -e # this will find out error automatically and exists
+set -e # this will find out error automatically and exists. -ex where x is for debug
 FAILURE()
 {
     echo "Failed at $1: $2"
