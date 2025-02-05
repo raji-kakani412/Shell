@@ -28,7 +28,7 @@ then
 fi
 
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
-if [ ! -z $FILES] #-Z is empty means true is files is empty, ! makes it false
+if [ ! -z $FILES] #-Z is empty means true if file is empty, ! makes it false
 then
     echo "Files are found"
     ZIP_FILE="$DEST_DIR/app-logs-$TIMESTAMP.zip"
