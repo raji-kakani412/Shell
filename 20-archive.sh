@@ -33,11 +33,11 @@ then
     echo "Files are found"
     ZIP_FILE="$DEST_DIR/app-logs-$TIMESTAMP.zip"
     find $SOURCE_DIR -name "*.log" -mtime +$DAYS | zip "$ZIP_FILE" -@
-    #check if zip file is successfully created or not
+    # check if zip file is successfully created or not
     if [ -f $ZIP_FILE]
     then
         echo "Successfully zipped files older than $DAYS"
-        #remove files from source directory
+        # remove files from source directory
         while IFS= read -r file # IFS is Internal Field Seperator,empty means it will not ignore white spaces. -r is for not ignoring special characters like /
         do
             echo "Deleting file:$file "
