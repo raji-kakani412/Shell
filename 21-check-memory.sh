@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DISK_USAGE=$(df -hT | grep xfs)
-DISK_THRESHOLD=5 #real projects it is usually 75
+DISK_THRESHOLD=5 # real projects it is usually 75
 
 while IFS= read -r line # IFS is Internal Field Seperator,empty means it will not ignore white spaces. -r is for not ignoring special characters like /
 do
